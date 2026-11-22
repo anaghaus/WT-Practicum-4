@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+
+    <style>
+        /* General Styling */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #173b70;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Navigation Bar using Flexbox */
+        nav {
+            background-color: #24549a;
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        /* Hover Effect */
+        nav ul li a:hover {
+            background-color: #f0a500;
+            color: #173b70;
+        }
+
+        /* Main Content */
+        main {
+            width: 85%;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #173b70;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #173b70;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            color: white;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            main {
+                width: 95%;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>STUDENT INFORMATION SYSTEM</h1>
+        <p>Your Academic Journey Starts Here</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Student Profile</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#exams">Examinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="home">
+            <h2>Welcome to Student Portal</h2>
+            <p>
+                The Student Information System helps students
+                manage their academic information in one place.
+            </p>
+        </section>
+
+        <section id="profile">
+            <h2>Student Profile</h2>
+            <p>Name: Student Name</p>
+            <p>Department: Computer Science</p>
+            <p>Semester: First Semester</p>
+        </section>
+
+        <section id="courses">
+            <h2>My Courses</h2>
+            <p>Web Technology</p>
+            <p>Digital Electronics</p>
+            <p>Mathematics</p>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance Details</h2>
+            <p>View your subject-wise attendance information.</p>
+        </section>
+
+        <section id="exams">
+            <h2>Examination Information</h2>
+            <p>View internal and semester examination details.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: student@example.com</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Information System</p>
+    </footer>
+
+</body>
+</html>
